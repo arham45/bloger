@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% for newpage in newpages %}
+{% block title %} {{ newpage.title }}  {% endblock title %}
+
+
+
+{% block body %}
+
+<p>{{ newpage.content }}</p>
+
+{% endblock %}
+
+{% endfor %}
